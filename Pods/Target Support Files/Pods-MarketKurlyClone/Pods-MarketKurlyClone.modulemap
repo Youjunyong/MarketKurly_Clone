@@ -1,0 +1,6 @@
+framework module Pods_MarketKurlyClone {
+  umbrella header "Pods-MarketKurlyClone-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Detail View Controller-->
+        <scene sceneID="bG6-05-tQn">
+            <objects>
+                <viewController storyboardIdentifier="DetailVC" id="DqV-uj-8NJ" customClass="DetailViewController" customModule="MarketKurlyClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rzT-Z5-QEg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="j7Z-nz-Bp3">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="SiG-Qe-rUX">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SiG-Qe-rUX" id="JSq-Gp-Gfg">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="68b-MW-L18"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="68b-MW-L18" firstAttribute="trailing" secondItem="j7Z-nz-Bp3" secondAttribute="trailing" id="HG8-MF-GlJ"/>
+                            <constraint firstItem="68b-MW-L18" firstAttribute="bottom" secondItem="j7Z-nz-Bp3" secondAttribute="bottom" id="Seb-AS-X4k"/>
+                            <constraint firstItem="j7Z-nz-Bp3" firstAttribute="top" secondItem="68b-MW-L18" secondAttribute="top" id="TtY-wW-pqC"/>
+                            <constraint firstItem="j7Z-nz-Bp3" firstAttribute="leading" secondItem="68b-MW-L18" secondAttribute="leading" id="pId-8f-UQO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="j7Z-nz-Bp3" id="plH-s8-jI8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tYH-7A-W0a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-688" y="724"/>
+        </scene>
+        <!--Payment View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="PaymentVC" id="Y6W-OH-hqX" customClass="PaymentViewController" customModule="MarketKurlyClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ge6-6C-kiL" customClass="ButtonBarView" customModule="XLPagerTabStrip">
+                                <rect key="frame" x="0.0" y="90" width="414" height="40"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="5mI-2B-4AY"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="cLq-Yw-EDi">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="7Ik-VD-fm1">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="4jJ-N4-cPQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mfQ-Na-Jca">
+                                <rect key="frame" x="0.0" y="130" width="414" height="732"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Imf-fE-lQK">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Imf-fE-lQK" firstAttribute="top" secondItem="FwC-yY-e4Z" secondAttribute="top" id="9RP-bh-7wR"/>
+                                    <constraint firstItem="Imf-fE-lQK" firstAttribute="height" secondItem="QFX-Gr-doQ" secondAttribute="height" multiplier="0.174863" id="Cps-Ql-BFW"/>
+                                    <constraint firstItem="Imf-fE-lQK" firstAttribute="trailing" secondItem="FwC-yY-e4Z" secondAttribute="trailing" id="DCa-jw-df6"/>
+                                    <constraint firstItem="Imf-fE-lQK" firstAttribute="bottom" secondItem="FwC-yY-e4Z" secondAttribute="bottom" id="Vu2-n0-3Ug"/>
+                                    <constraint firstItem="Imf-fE-lQK" firstAttribute="leading" secondItem="FwC-yY-e4Z" secondAttribute="leading" id="am6-xS-kbw"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="FwC-yY-e4Z"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="QFX-Gr-doQ"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mfQ-Na-Jca" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="2TQ-QP-4Z6"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="mfQ-Na-Jca" secondAttribute="trailing" id="FU7-s6-0IO"/>
+                            <constraint firstItem="ge6-6C-kiL" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="90" id="KL4-3T-iyQ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ge6-6C-kiL" secondAttribute="trailing" id="OAw-uV-grc"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="mfQ-Na-Jca" secondAttribute="bottom" id="R31-3t-ePf"/>
+                            <constraint firstItem="Imf-fE-lQK" firstAttribute="width" secondItem="vDu-zF-Fre" secondAttribute="width" multiplier="0.57971" id="jCh-Ko-OSJ"/>
+                            <constraint firstItem="mfQ-Na-Jca" firstAttribute="top" secondItem="ge6-6C-kiL" secondAttribute="bottom" id="tqI-80-orM"/>
+                            <constraint firstItem="ge6-6C-kiL" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="vCg-JB-V3B"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonBarView" destination="ge6-6C-kiL" id="V79-jG-oHk"/>
+                        <outlet property="containerView" destination="mfQ-Na-Jca" id="s1x-99-km7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="81.696428571428569"/>
+        </scene>
+        <!--Info View Controller-->
+        <scene sceneID="1I3-a7-ZhW">
+            <objects>
+                <viewController storyboardIdentifier="InfoVC" id="ztR-YJ-xbj" customClass="InfoViewController" customModule="MarketKurlyClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QtX-BS-RfZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="DpK-rg-HQd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0K1-eq-ilm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-64" y="724"/>
+        </scene>
+        <!--Comment View Controller-->
+        <scene sceneID="3fx-lG-BPw">
+            <objects>
+                <viewController storyboardIdentifier="CommentVC" id="vQs-ln-hOV" customClass="CommentViewController" customModule="MarketKurlyClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eT2-5o-r5H">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="jtC-fq-jKO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="COX-iT-NLg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="567" y="724"/>
+        </scene>
+        <!--Inquiry View Controller-->
+        <scene sceneID="qnf-iq-id2">
+            <objects>
+                <viewController storyboardIdentifier="InquiryVC" id="1l0-D7-GEj" customClass="InquiryViewController" customModule="MarketKurlyClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cE5-NQ-yNC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="vcu-ef-4c6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lds-8a-bCq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1196" y="724"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

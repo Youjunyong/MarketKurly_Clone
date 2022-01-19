@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Cart View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="CartVC" id="Y6W-OH-hqX" customClass="CartViewController" customModule="MarketKurlyClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="20" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="gWA-fN-7Ld">
+                                <rect key="frame" x="0.0" y="77" width="414" height="740"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                            </tableView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="footerLongButton" translatesAutoresizingMaskIntoConstraints="NO" id="7uo-Pe-qiV">
+                                <rect key="frame" x="0.0" y="787" width="414" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="4EM-1p-Kif"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eoi-GX-2Iv">
+                                <rect key="frame" x="184" y="804" width="46" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7b8-wa-fa3">
+                                <rect key="frame" x="5" y="794.5" width="404" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="z1X-o9-Oxi"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="orderClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="SYM-QF-1oa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Eoi-GX-2Iv" firstAttribute="centerY" secondItem="7uo-Pe-qiV" secondAttribute="centerY" id="1uD-tN-Jr9"/>
+                            <constraint firstItem="7uo-Pe-qiV" firstAttribute="top" secondItem="gWA-fN-7Ld" secondAttribute="bottom" constant="-30" id="7FQ-If-j9C"/>
+                            <constraint firstItem="7uo-Pe-qiV" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="8EI-m1-Zx6"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="7uo-Pe-qiV" secondAttribute="trailing" id="BfW-A5-rZL"/>
+                            <constraint firstItem="7b8-wa-fa3" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="5" id="FHe-SG-ySF"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="7uo-Pe-qiV" secondAttribute="bottom" constant="20" id="G9K-Ei-gSh"/>
+                            <constraint firstItem="Eoi-GX-2Iv" firstAttribute="centerX" secondItem="7uo-Pe-qiV" secondAttribute="centerX" id="GWq-hB-KXw"/>
+                            <constraint firstItem="7b8-wa-fa3" firstAttribute="centerX" secondItem="Eoi-GX-2Iv" secondAttribute="centerX" id="JtF-du-zmD"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="7b8-wa-fa3" secondAttribute="trailing" constant="5" id="Vth-Zf-vtM"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="gWA-fN-7Ld" secondAttribute="trailing" id="bM5-C9-azZ"/>
+                            <constraint firstItem="gWA-fN-7Ld" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="77" id="pOz-0z-5ow"/>
+                            <constraint firstItem="7b8-wa-fa3" firstAttribute="centerY" secondItem="Eoi-GX-2Iv" secondAttribute="centerY" id="u92-0c-5a2"/>
+                            <constraint firstItem="gWA-fN-7Ld" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="xYj-Lw-kMQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="orderBtn" destination="7b8-wa-fa3" id="V9f-df-yho"/>
+                        <outlet property="orderButton" destination="Eoi-GX-2Iv" id="8G3-LH-39P"/>
+                        <outlet property="tableView" destination="gWA-fN-7Ld" id="mMP-Tp-R7X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="129" y="107"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="footerLongButton" width="1170" height="163"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

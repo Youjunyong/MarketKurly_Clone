@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell2" rowHeight="589" id="1iH-wf-2d2" customClass="ToSTableViewCell" customModule="MarketKurlyClone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="589"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1iH-wf-2d2" id="UPO-wv-Mqf">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="589"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RegisterTerms" translatesAutoresizingMaskIntoConstraints="NO" id="Uac-3W-8Y4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="589"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SMf-If-TOn" userLabel="기준선">
+                        <rect key="frame" x="20" y="0.0" width="2" height="589"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="2" id="1UF-hc-rba"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TosCheckBoxFalse" translatesAutoresizingMaskIntoConstraints="NO" id="5e4-pL-Hqo">
+                        <rect key="frame" x="20" y="62" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="Iyf-nN-BIZ"/>
+                            <constraint firstAttribute="height" constant="25" id="Rqt-56-XjD"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VUH-tq-cT1">
+                        <rect key="frame" x="20" y="62" width="25" height="25"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain"/>
+                        <connections>
+                            <action selector="entireAgreeBtnClicked:" destination="1iH-wf-2d2" eventType="touchUpInside" id="Fyh-PT-3Xx"/>
+                        </connections>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TosCheckBoxFalse" translatesAutoresizingMaskIntoConstraints="NO" id="xpp-O8-mzJ" userLabel="Tos1">
+                        <rect key="frame" x="20" y="177" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="CqR-rN-2rD"/>
+                            <constraint firstAttribute="height" constant="25" id="V8U-aX-tgl"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1PQ-qy-IOJ">
+                        <rect key="frame" x="20" y="177" width="25" height="25"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain"/>
+                        <connections>
+                            <action selector="tos1BtnClicked:" destination="1iH-wf-2d2" eventType="touchUpInside" id="OV8-he-DZv"/>
+                        </connections>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TosCheckBoxFalse" translatesAutoresizingMaskIntoConstraints="NO" id="WQy-zq-6ek" userLabel="Tos2">
+                        <rect key="frame" x="20" y="220" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="YQH-gT-Y3Y"/>
+                            <constraint firstAttribute="height" constant="25" id="d7e-QZ-06s"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3mz-3x-epm">
+                        <rect key="frame" x="20" y="220" width="25" height="25"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain"/>
+                        <connections>
+                            <action selector="tos2BtnClicked:" destination="1iH-wf-2d2" eventType="touchUpInside" id="GD3-2M-eNt"/>
+                        </connections>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TosCheckBoxFalse" translatesAutoresizingMaskIntoConstraints="NO" id="eg4-Ab-zRf" userLabel="Tos3">
+                        <rect key="frame" x="20" y="263" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="1Eb-pm-z9c"/>
+                            <constraint firstAttribute="width" constant="25" id="FyV-Lf-W5c"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9CN-C4-8V4">
+                        <rect key="frame" x="20" y="263" width="25" height="25"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain"/>
+                        <connections>
+                            <action selector="tos3BtnClicked:" destination="1iH-wf-2d2" eventType="touchUpInside" id="BaU-Gn-Ssy"/>
+                        </connections>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TosCheckBoxFalse" translatesAutoresizingMaskIntoConstraints="NO" id="uZu-Nz-2Yq" userLabel="SMS">
+                        <rect key="frame" x="69" y="347" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="04H-5S-OM1"/>
+                            <constraint firstAttribute="height" constant="25" id="Yvw-Lb-sim"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Qb-2a-Zfl">
+                        <rect key="frame" x="69" y="347" width="25" height="25"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain"/>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TosCheckBoxFalse" translatesAutoresizingMaskIntoConstraints="NO" id="hyR-Gh-UW3" userLabel="EMAIL">
+                        <rect key="frame" x="254" y="347" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="YEb-lq-cBG"/>
+                            <constraint firstAttribute="height" constant="25" id="kVu-MT-em0"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Td2-VT-et1">
+                        <rect key="frame" x="254" y="347" width="25" height="25"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain"/>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TosCheckBoxFalse" translatesAutoresizingMaskIntoConstraints="NO" id="7ji-4y-0Ud" userLabel="Tos4">
+                        <rect key="frame" x="20" y="304" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="99N-lH-2ms"/>
+                            <constraint firstAttribute="width" constant="25" id="Kao-kN-DtG"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KdW-lT-erU">
+                        <rect key="frame" x="20" y="304" width="25" height="25"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain"/>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TosCheckBoxFalse" translatesAutoresizingMaskIntoConstraints="NO" id="P56-TR-qeq" userLabel="Tos5">
+                        <rect key="frame" x="20" y="478" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="MlC-Cd-Gvh"/>
+                            <constraint firstAttribute="width" constant="25" id="SQL-Wo-P40"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pl7-Cl-cbh">
+                        <rect key="frame" x="20" y="478" width="25" height="25"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3kE-BN-cmy" userLabel="submitButton">
+                        <rect key="frame" x="22" y="533" width="372" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="fR7-z3-5Nc"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain"/>
+                        <connections>
+                            <action selector="submitButtonClicked:" destination="1iH-wf-2d2" eventType="touchUpInside" id="cX2-60-qpo"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="3kE-BN-cmy" secondAttribute="bottom" constant="5" id="053-mX-8mB"/>
+                    <constraint firstAttribute="bottom" secondItem="SMf-If-TOn" secondAttribute="bottom" id="2Yx-FW-afR"/>
+                    <constraint firstItem="SMf-If-TOn" firstAttribute="top" secondItem="UPO-wv-Mqf" secondAttribute="top" id="2r5-ah-4V6"/>
+                    <constraint firstItem="VUH-tq-cT1" firstAttribute="leading" secondItem="5e4-pL-Hqo" secondAttribute="leading" id="30X-8g-lZf"/>
+                    <constraint firstItem="9CN-C4-8V4" firstAttribute="trailing" secondItem="eg4-Ab-zRf" secondAttribute="trailing" id="3GZ-eh-NHw"/>
+                    <constraint firstItem="pl7-Cl-cbh" firstAttribute="trailing" secondItem="P56-TR-qeq" secondAttribute="trailing" id="4PR-Nh-Bk7"/>
+                    <constraint firstItem="P56-TR-qeq" firstAttribute="top" secondItem="7ji-4y-0Ud" secondAttribute="bottom" constant="149" id="6DN-B2-gH5"/>
+                    <constraint firstItem="3kE-BN-cmy" firstAttribute="leading" secondItem="SMf-If-TOn" secondAttribute="trailing" id="6GZ-vb-bgM"/>
+                    <constraint firstItem="VUH-tq-cT1" firstAttribute="bottom" secondItem="5e4-pL-Hqo" secondAttribute="bottom" id="7aL-VU-lyT"/>
+                    <constraint firstItem="Td2-VT-et1" firstAttribute="leading" secondItem="hyR-Gh-UW3" secondAttribute="leading" id="7nm-xa-Qwg"/>
+                    <constraint firstItem="uZu-Nz-2Yq" firstAttribute="centerY" secondItem="hyR-Gh-UW3" secondAttribute="centerY" id="837-MU-b6Z"/>
+                    <constraint firstItem="SMf-If-TOn" firstAttribute="leading" secondItem="UPO-wv-Mqf" secondAttribute="leading" constant="20" id="9l4-GD-24J"/>
+                    <constraint firstItem="xpp-O8-mzJ" firstAttribute="leading" secondItem="SMf-If-TOn" secondAttribute="leading" id="B4Y-fF-JRp"/>
+                    <constraint firstItem="eg4-Ab-zRf" firstAttribute="top" secondItem="WQy-zq-6ek" secondAttribute="bottom" constant="18" id="EcB-do-HQm"/>
+                    <constraint firstItem="5e4-pL-Hqo" firstAttribute="leading" secondItem="SMf-If-TOn" secondAttribute="leading" id="Efy-Ye-xzJ"/>
+                    <constraint firstItem="pl7-Cl-cbh" firstAttribute="top" secondItem="P56-TR-qeq" secondAttribute="top" id="FS2-6a-Wlh"/>
+                    <constraint firstItem="3mz-3x-epm" firstAttribute="top" secondItem="WQy-zq-6ek" secondAttribute="top" id="GDa-sI-Kqr"/>
+                    <constraint firstItem="9CN-C4-8V4" firstAttribute="bottom" secondItem="eg4-Ab-zRf" secondAttribute="bottom" id="Iso-mY-sH0"/>
+                    <constraint firstItem="1PQ-qy-IOJ" firstAttribute="top" secondItem="xpp-O8-mzJ" secondAttribute="top" id="J86-cI-fvK"/>
+                    <constraint firstItem="uZu-Nz-2Yq" firstAttribute="leading" secondItem="7ji-4y-0Ud" secondAttribute="trailing" constant="24" id="JSh-Ib-Xmw"/>
+                    <constraint firstItem="Uac-3W-8Y4" firstAttribute="top" secondItem="UPO-wv-Mqf" secondAttribute="top" id="K4x-Ud-56c"/>
+                    <constraint firstItem="9CN-C4-8V4" firstAttribute="leading" secondItem="eg4-Ab-zRf" secondAttribute="leading" id="KLN-C8-gcZ"/>
+                    <constraint firstItem="KdW-lT-erU" firstAttribute="bottom" secondItem="7ji-4y-0Ud" secondAttribute="bottom" id="KT9-WA-fjk"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="3kE-BN-cmy" secondAttribute="trailing" id="KbV-6H-ROb"/>
+                    <constraint firstItem="5Qb-2a-Zfl" firstAttribute="bottom" secondItem="uZu-Nz-2Yq" secondAttribute="bottom" id="M3u-KG-FKv"/>
+                    <constraint firstItem="7ji-4y-0Ud" firstAttribute="leading" secondItem="SMf-If-TOn" secondAttribute="leading" id="PP1-5R-Cxu"/>
+                    <constraint firstItem="WQy-zq-6ek" firstAttribute="top" secondItem="xpp-O8-mzJ" secondAttribute="bottom" constant="18" id="QTl-Rx-fQN"/>
+                    <constraint firstItem="Uac-3W-8Y4" firstAttribute="leading" secondItem="UPO-wv-Mqf" secondAttribute="leading" id="RRp-LA-eo8"/>
+                    <constraint firstItem="uZu-Nz-2Yq" firstAttribute="top" secondItem="UPO-wv-Mqf" secondAttribute="topMargin" constant="336" id="RiU-U3-tZB"/>
+                    <constraint firstItem="pl7-Cl-cbh" firstAttribute="bottom" secondItem="P56-TR-qeq" secondAttribute="bottom" id="Rl9-8U-3k7"/>
+                    <constraint firstItem="3mz-3x-epm" firstAttribute="bottom" secondItem="WQy-zq-6ek" secondAttribute="bottom" id="Se5-SA-zPr"/>
+                    <constraint firstItem="xpp-O8-mzJ" firstAttribute="top" secondItem="5e4-pL-Hqo" secondAttribute="bottom" constant="90" id="UzD-3f-Mfi"/>
+                    <constraint firstItem="3mz-3x-epm" firstAttribute="trailing" secondItem="WQy-zq-6ek" secondAttribute="trailing" id="V5n-G8-LqL"/>
+                    <constraint firstItem="KdW-lT-erU" firstAttribute="trailing" secondItem="7ji-4y-0Ud" secondAttribute="trailing" id="VnT-bI-nPz"/>
+                    <constraint firstItem="1PQ-qy-IOJ" firstAttribute="trailing" secondItem="xpp-O8-mzJ" secondAttribute="trailing" id="Wzc-Ou-c8Y"/>
+                    <constraint firstItem="P56-TR-qeq" firstAttribute="leading" secondItem="SMf-If-TOn" secondAttribute="leading" id="X09-Z4-FD1"/>
+                    <constraint firstItem="1PQ-qy-IOJ" firstAttribute="bottom" secondItem="xpp-O8-mzJ" secondAttribute="bottom" id="XGn-ch-RXa"/>
+                    <constraint firstItem="pl7-Cl-cbh" firstAttribute="leading" secondItem="P56-TR-qeq" secondAttribute="leading" id="Xwd-DG-uH5"/>
+                    <constraint firstItem="VUH-tq-cT1" firstAttribute="trailing" secondItem="5e4-pL-Hqo" secondAttribute="trailing" id="YBP-mk-gbr"/>
+                    <constraint firstItem="eg4-Ab-zRf" firstAttribute="leading" secondItem="SMf-If-TOn" secondAttribute="leading" id="b1w-29-2lo"/>
+                    <constraint firstItem="Td2-VT-et1" firstAttribute="bottom" secondItem="hyR-Gh-UW3" secondAttribute="bottom" id="cDq-Sr-s3j"/>
+                    <constraint firstAttribute="bottom" secondItem="Uac-3W-8Y4" secondAttribute="bottom" id="dyu-DQ-2i5"/>
+                    <constraint firstItem="Td2-VT-et1" firstAttribute="top" secondItem="hyR-Gh-UW3" secondAttribute="top" id="fG1-6w-mJO"/>
+                    <constraint firstItem="5Qb-2a-Zfl" firstAttribute="trailing" secondItem="uZu-Nz-2Yq" secondAttribute="trailing" id="fXV-Xg-PUf"/>
+                    <constraint firstItem="KdW-lT-erU" firstAttribute="top" secondItem="7ji-4y-0Ud" secondAttribute="top" id="gg3-Eq-Dg1"/>
+                    <constraint firstItem="5e4-pL-Hqo" firstAttribute="top" secondItem="UPO-wv-Mqf" secondAttribute="top" constant="62" id="gu2-3I-TFN"/>
+                    <constraint firstItem="WQy-zq-6ek" firstAttribute="leading" secondItem="SMf-If-TOn" secondAttribute="leading" id="hC8-f4-zyx"/>
+                    <constraint firstAttribute="trailing" secondItem="Uac-3W-8Y4" secondAttribute="trailing" id="klT-MY-Qzm"/>
+                    <constraint firstItem="KdW-lT-erU" firstAttribute="leading" secondItem="7ji-4y-0Ud" secondAttribute="leading" id="n3A-DJ-49k"/>
+                    <constraint firstItem="Td2-VT-et1" firstAttribute="trailing" secondItem="hyR-Gh-UW3" secondAttribute="trailing" id="p1v-og-WiF"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="hyR-Gh-UW3" secondAttribute="trailing" constant="115" id="pYO-bR-tR1"/>
+                    <constraint firstItem="5Qb-2a-Zfl" firstAttribute="top" secondItem="uZu-Nz-2Yq" secondAttribute="top" id="rEh-FF-oYL"/>
+                    <constraint firstItem="1PQ-qy-IOJ" firstAttribute="leading" secondItem="xpp-O8-mzJ" secondAttribute="leading" id="vXs-UJ-GkU"/>
+                    <constraint firstItem="5Qb-2a-Zfl" firstAttribute="leading" secondItem="uZu-Nz-2Yq" secondAttribute="leading" id="wBq-gQ-pFo"/>
+                    <constraint firstItem="VUH-tq-cT1" firstAttribute="top" secondItem="5e4-pL-Hqo" secondAttribute="top" id="wIe-wh-MNd"/>
+                    <constraint firstItem="9CN-C4-8V4" firstAttribute="top" secondItem="eg4-Ab-zRf" secondAttribute="top" id="wZp-UO-acW"/>
+                    <constraint firstItem="3mz-3x-epm" firstAttribute="leading" secondItem="WQy-zq-6ek" secondAttribute="leading" id="yYm-z1-flu"/>
+                    <constraint firstItem="7ji-4y-0Ud" firstAttribute="top" secondItem="eg4-Ab-zRf" secondAttribute="bottom" constant="16" id="z70-lw-0kX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="emailView" destination="hyR-Gh-UW3" id="OX5-I1-TaL"/>
+                <outlet property="entireAgreeView" destination="5e4-pL-Hqo" id="ev9-qd-IKE"/>
+                <outlet property="smsView" destination="uZu-Nz-2Yq" id="FMt-Vu-oal"/>
+                <outlet property="submitButton" destination="3kE-BN-cmy" id="X0M-HX-KXV"/>
+                <outlet property="tos1View" destination="xpp-O8-mzJ" id="p0Q-KW-d8b"/>
+                <outlet property="tos2View" destination="WQy-zq-6ek" id="VW5-jc-BoK"/>
+                <outlet property="tos3View" destination="eg4-Ab-zRf" id="9Av-qH-mbk"/>
+                <outlet property="tos4View" destination="7ji-4y-0Ud" id="gyk-w0-PCv"/>
+                <outlet property="tos5View" destination="P56-TR-qeq" id="ree-I2-6Yy"/>
+            </connections>
+            <point key="canvasLocation" x="198.55072463768118" y="195.20089285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="RegisterTerms" width="1170" height="1644"/>
+        <image name="TosCheckBoxFalse" width="74" height="74"/>
+    </resources>
+</document>
